@@ -1,0 +1,32 @@
+@import "../mixins";
+@import "../colors";
+
+#set-quantity {
+  @include background-color($color-background-views, 100vh, 100%);
+
+  .container-button {
+    @include margin(10px, 0px, 0px, 0px)
+  }
+
+  .container-image {
+    @include background-color($color-font-level-0, 100%, 100%);
+    @include textAlign(center);
+    @include margin(15px, 15px, 15px, 15px)
+  }
+
+  .input-style {
+    @include textAlign(center)
+  }
+
+  .container-page {
+    height: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  img {
+    margin: auto;
+  }
+
+
+}

@@ -1,0 +1,57 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+#button-orange {
+
+
+  @include margin(5px, 0px, 0px, 10px);
+
+  img {
+    @include margin(0px, 5px, 0px, 0px)
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+}
+
+#UPDATE_PRODUCT {
+  .modal-message-style {
+    @include margin(25px, 0px, 0px, 25px);
+
+    div {
+      font-family: IRANSans;
+    }
+
+    buttonStyle {
+      font-family: IRANSans;
+    }
+
+  }
+
+  img {
+    @include margin(20px, 20px, 20px, 20px)
+  }
+}
+
+#SET_QUANTITY_BUTTON {
+  .modal-message-style {
+    @include margin(25px, 0px, 0px, 25px)
+  }
+
+  img {
+    @include margin(20px, 20px, 20px, 20px)
+  }
+}
+
+#CREATE_PRODUCT {
+  .modal-message-style {
+    @include margin(25px, 0px, 0px, 25px)
+  }
+
+  img {
+    @include margin(20px, 20px, 20px, 20px)
+  }
+}

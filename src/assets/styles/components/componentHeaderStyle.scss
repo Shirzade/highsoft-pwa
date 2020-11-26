@@ -1,0 +1,31 @@
+@import "../mixins";
+@import "../colors";
+
+#header {
+  @include background-color($color-header, 55px, 100%);
+  @include padding(0px, 0px, 0px, 15px);
+
+  .menu-header {
+    width: 100%;
+    height: 200px;
+    @include background-image('~@/assets/img/ic_back_menu.jpg', no-repeat, center, cover, 200px);
+  }
+
+  .menu-shop-name {
+    @include font-style($color-orange, 20px, 35px, normal)
+  }
+
+  .title-header {
+    @include margin(12px, 50px, 0px, 0px);
+    @include textAlign(right);
+    @include font-style($color-font-level-0, 15px, 15px, normal)
+  }
+
+  .image-header {
+    cursor: pointer;
+  }
+
+  .menu-owner-info {
+    @include font-style($color-login-counter, 14px, 35px, normal)
+  }
+}

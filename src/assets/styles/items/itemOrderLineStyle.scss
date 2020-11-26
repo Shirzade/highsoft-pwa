@@ -1,0 +1,135 @@
+@import "../mixins";
+@import "../colors";
+
+#item-order-line {
+  background: $color-font-level-0;
+  @include margin(10px, 0px, 0px, 0px);
+  @include padding(5px, 10px, 5px, 5px);
+
+  .line-name {
+    @include font-style($color-font-level-10, 15px, 25px, normal);
+    @include textAlign(right);
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    @include margin(10px, 0px, 0px, 0px)
+  }
+
+  .container-set-available-product {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-select-new-product {
+    @include margin(5px, 0px, 0px, 0px);
+    background-color: $color-primary;
+    @include padding(10px, 10px, 10px, 10px);
+
+    div {
+      color: $color-font-level-0;
+      text-align: center;
+      font-size: 12px;
+      @include margin(0px, 0px, 0px, 10px)
+    }
+
+    .container-button-new-product {
+      width: 100%;
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center
+    }
+
+    .container-add-new-product-button {
+      width: 200px;
+    }
+  }
+
+  .loading-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .container-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-available {
+    @include margin(0px, 10px, 10px, 0px);
+    text-align: center;
+    color: #2BC95F;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    div {
+      justify-items: center;
+      justify-content: center;
+      align-content: center;
+      @include padding(16px, 5px, 5px, 0px)
+    }
+
+  }
+
+  .container-not-available {
+    @include margin(0px, 10px, 10px, 0px);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: #ED1C24;
+    font-size: 12px;
+    justify-items: center;
+    align-content: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    div {
+      justify-items: center;
+      justify-content: center;
+      align-content: center;
+      @include padding(16px, 5px, 5px, 0px)
+    }
+  }
+
+  .text-available-active {
+    color: #2CC960;
+  }
+
+  .text-not-available-active {
+    color: #F1575D;
+  }
+
+  .text-available-in-active {
+    color: #BCBEC0;
+  }
+
+  .container-button-suggest-product {
+    background-color: $color-orange;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    justify-items: center;
+
+    @include padding(10px, 10px, 10px, 10px);
+    cursor: pointer;
+  }
+
+}

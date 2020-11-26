@@ -1,0 +1,25 @@
+@import "../mixins";
+@import "../colors";
+
+#item-main-menu {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  @include margin(10px, 0px, 0px, 0px);
+  justify-content: flex-end;
+
+  .container-item-menu {
+    width: 100%;
+    @include padding(3px,10px,10px,3px)
+  }
+  .container-item-menu:hover {
+    background: rgba(160, 145, 201, 0.13);
+  }
+
+  .item-main-menu-title {
+    @include font-style($color-font-level-10, 12px, 15px,normal);
+    @include margin(8px, 10px, 0, 0);
+    @include floatElement(right)
+
+  }
+}

@@ -1,0 +1,58 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+
+#details-internet-order {
+  background: $color-background-views;
+
+  .container-financial {
+    @include textAlign(right);
+    @include margin(15px, 0px, 0px, 15px);
+  }
+
+  .container-order-lines {
+    background: $color-section-shop-lines;
+    @include padding(10px, 0px, 0px, 10px)
+  }
+
+  .title-image {
+    @include margin(10px, 0px, 0px, 0px);
+    justify-content: center;
+  }
+
+  .container-image {
+    width: 100%;
+    @include textAlign(center);
+  }
+
+  .section-details-order {
+    @include textAlign(right);
+    @include padding(15px, 15px, 15px, 15px)
+  }
+
+  .button-show-list-lines {
+    img {
+      float: left;
+      @include margin(8px, 0px, 0px, 0px)
+    }
+
+    div {
+      float: right;
+    }
+  }
+
+  .container-message {
+    height: 100px;
+    @include textAlign(center)
+  }
+
+  .container-select-pak {
+    background-color: $color-section-shop-lines;
+    @include padding(10px,10px,10px,10px);
+    @include textAlign(center);
+    @include margin(0px,0px,0px,10px)
+  }
+
+
+}

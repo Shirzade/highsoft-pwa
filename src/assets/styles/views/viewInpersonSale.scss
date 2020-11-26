@@ -1,0 +1,22 @@
+@import "../mixins";
+@import "../colors";
+
+#in-person-sale {
+  @include background-color($color-background-views, 100vh, 100%);
+
+  .flex-container {
+    height: 100vh;
+  }
+
+  .title-orders {
+    @include background-color($color-orange, 40px, 100%);
+    @include margin(5px, 5px, 5px, 5px);
+    @include border(1px, solid, $color-orange, 0);
+    @include border-radius(5px, 5px, 0px, 0px)
+  }
+
+  .list-orders {
+    @include padding(0px,5px,5px,0px)
+
+  }
+}

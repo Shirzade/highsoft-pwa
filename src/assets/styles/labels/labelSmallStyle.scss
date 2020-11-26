@@ -1,0 +1,7 @@
+@import "../mixins";
+@import "../colors";
+
+#label-small {
+  @include font-style($color-font-level-10, 10px, 10px, normal);
+  @include margin(5px, 0px, 0px, 0px)
+}

@@ -1,0 +1,14 @@
+@import "../mixins";
+@import "../colors";
+
+#label-large {
+  .primary {
+    @include textAlign(right);
+    @include font-style($color-font-level-10, 14px, 26px, bold);
+  }
+
+  .orange {
+    @include textAlign(right);
+    @include font-style($color-orange, 14px, 26px, bold);
+  }
+}

@@ -1,0 +1,78 @@
+POST https://demo.highsoft.ir/api/v1/pos/product/update HTTP/1.1
+Content-Type: application/json
+X-Openerp-Session-id: 246f4c7600e0e1b9f8fad646a598ae02038d9d3b
+
+{
+  "jsonrpc": "2.0",
+    "method": "call",
+    "params": {
+            "sid": "1",
+            "pid": "146246",
+            "name":"خمیر منجمد پیراشکی جعبه مقوایی 15 عددی 0/5 کیلوگرمی پمینا",
+            "barcode": 6262147000877,
+            "fixed_price": 12555,
+            "discount": 20,
+            "discount_web": 25,
+            "fixed_price_web":25,
+            "purchase_last_price": 12,
+            "price_discount_fix":45,
+            "display_website": true,
+            "categ_ids":[]
+          },
+    "id": "382893928"
+}
+
+
+#######
+POST https://demo.highsoft.ir/api/v1/pos/product/create HTTP/1.1
+Content-Type: application/json
+X-Openerp-Session-id: 246f4c7600e0e1b9f8fad646a598ae02038d9d3b
+
+{
+  "jsonrpc": "2.0",
+    "method": "call",
+    "params": {
+            "sid": "1",
+            "name":" شلوار زارا",
+            "barcode": 1958152280513,
+            "fixed_price": 12555,
+            "discount": 20,
+            "discount_web": 25,
+            "fixed_price_web":25000,
+            "purchase_last_price": 100,
+            "price_discount_fix":45,
+            "display_website": true,
+            "categ_ids":[]
+          },
+    "id": "382893928"
+} 
+
+##################
+POST https://demo.highsoft.ir/app/pos_order_read
+Content-Type: application/json
+X-Openerp-Session-id: 55fde7f3399541fbf1b23845cc6e432c7a7741d4
+
+
+{
+  "jsonrpc": "2.0",
+    "method": "call",
+    "params": {},
+    "id": "382893928"
+} 
+
+#########
+POST https://demo.highsoft.ir/api/v1/pos/product/search
+Content-Type: application/json
+X-Openerp-Session-id: e31dae8f0e10b3a1ef19013a07f251bfb6eb829b
+
+{
+  "jsonrpc": "2.0",
+    "method": "call",
+    "params": {
+       "pname": "شلوار زارا",
+       "sid": 1
+    },
+    "id": "382893928"
+} 
+
+   

@@ -1,0 +1,39 @@
+@import "../mixins";
+@import "../colors";
+
+#details-product {
+  background: $color-background-views;
+
+
+  .container-item {
+    @include margin(0px, 0px, 0px, 5px)
+  }
+
+  .containerCheckBox {
+    @include floatElement(right);
+    @include margin(10px, 0px, 0px, 10px)
+  }
+
+  .container-title-checkbox {
+    @include margin(8px, 0px, 0px, 0px)
+  }
+
+  .container-image {
+    @include background-color($color-font-level-0, 100%, 100%);
+    @include margin(18px, 18px, 18px, 18px)
+
+  }
+
+  .container-change-image {
+    direction: rtl;
+  }
+
+  .container-new-image{
+    @include margin(8px,0px,0px,0px)
+  }
+
+
+}
+
+
+

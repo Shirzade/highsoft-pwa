@@ -1,0 +1,13 @@
+@import "../mixins";
+@import "../colors";
+
+#splash {
+  @include background-image('~@/assets/img/ic_background.jpg', no-repeat, center, cover,100vh);
+
+  .flex-container {
+    height: 100vh;
+  }
+
+}
+
+

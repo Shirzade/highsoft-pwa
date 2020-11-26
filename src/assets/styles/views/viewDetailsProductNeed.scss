@@ -1,0 +1,33 @@
+@import "../mixins";
+@import "../colors";
+
+
+#details-product-need {
+  @include background-color($color-background-views, 110vh, 100%);
+
+  .container-image {
+    @include background-color($color-font-level-0, 100%, 100%);
+    @include textAlign(center);
+    @include margin(15px, 15px, 15px, 15px)
+  }
+
+  .container-title {
+    @include background-color($color-orange, 40px, 100%);
+    @include border-radius(8px, 8px, 0px, 0px);
+    @include textAlign(center);
+    @include font-style($color-font-level-0, 15px, 25px, bolder);
+    @include padding(5px, 0px, 0px, 0px);
+    @include margin(5px, 0px, 0px, 0px)
+  }
+
+  .container-content {
+    background: $color-background-details-need-shop;
+    @include padding(15px, 15px, 15px, 15px);
+    width: 100%;
+
+    div {
+      @include textAlign(center)
+    }
+  }
+
+}

@@ -1,0 +1,48 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+
+#login {
+  @include background-image('~@/assets/img/ic_background.jpg', no-repeat, center, cover, 100vh);
+
+  .flex-container {
+    height: 100vh;
+  }
+
+  .containerForm {
+    background: $color-background-login-form;
+    text-align: right;
+    @include directionRTL();
+    @include padding(5vh, 5vh, 5vh, 5vh)
+  }
+
+  .containerCheckBox {
+    @include floatElement(right);
+    @include margin(0px, 10px, 10px, 0px)
+  }
+
+  .container-remember-me {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-class {
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    border-top-Left-radius:5px;
+    border-bottom-left-radius:5px;
+  }
+
+  .input-group-text {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .container-form-login-page {
+    @include margin(10px,0px,0px,10px)
+  }
+
+}

@@ -1,0 +1,60 @@
+@import "../mixins";
+@import "../colors";
+
+
+#item-home-import-product {
+  @include background-color($color-primary, 150px, 100%);
+  @include textAlign(center);
+  @include padding(20px, 20px, 20px, 20px);
+  @include border-type(1px, 1px, 0, 0, $color-login-counter, solid);
+  cursor: pointer;
+  color: $color-login-counter;
+  font-size: 12px;
+
+  img {
+    @include margin(0px, 0px, 0px, 10px)
+  }
+
+}
+
+#item-home-sale-in-person {
+  @include background-color($color-primary, 150px, 100%);
+  @include textAlign(center);
+  @include padding(20px, 20px, 20px, 20px);
+  @include border-type(0, 1px, 0, 1px, $color-login-counter, solid);
+  color: $color-login-counter;
+  cursor: pointer;
+  font-size: 12px;
+
+  img {
+    @include margin(0px, 0px, 0px, 10px)
+  }
+}
+
+#item-home-sale-internet {
+  @include background-color($color-primary, 150px, 100%);
+  @include textAlign(center);
+  @include padding(20px, 20px, 20px, 20px);
+  color: $color-login-counter;
+  cursor: pointer;
+  @include border-type(0, 0, 1px, 1px, $color-login-counter, solid);
+  font-size: 12px;
+
+  img {
+    @include margin(0px, 0px, 0px, 10px)
+  }
+}
+
+#item-home-shop-need {
+  @include background-color($color-primary, 150px, 100%);
+  @include textAlign(center);
+  @include padding(20px, 20px, 20px, 20px);
+  @include border-type(1px, 0, 1px, 0, $color-login-counter, solid);
+  color: $color-login-counter;
+  cursor: pointer;
+  font-size: 12px;
+
+  img {
+    @include margin(0px, 0px, 0px, 10px)
+  }
+}

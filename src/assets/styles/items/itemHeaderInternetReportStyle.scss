@@ -1,0 +1,29 @@
+@import "../mixins";
+@import "../colors";
+
+#item-header-internet-report {
+  width: 25%;
+  @include padding(5px, 5px, 5px, 5px);
+  display: flex;
+  flex: auto;
+
+
+  .container-item-internet-sale {
+    @include background-color($color-font-level-0, 70px, 100%);
+    @include textAlign(center);
+    @include border(1px, solid, $color-font-level-12, 5px);
+    @include padding(3px, 0px, 0px, 0px);
+    @include margin(1px,1px,1px,1px);
+    cursor: pointer;
+  }
+
+  .style-order {
+    @include font-style($color-font-level-10, 10px, 10px, normal);
+    @include margin(5px, 0px, 0px, 0px)
+  }
+  .style-order-selected {
+    @include font-style($color-orange, 10px, 10px, normal);
+    @include margin(5px, 0px, 0px, 0px)
+  }
+}
+

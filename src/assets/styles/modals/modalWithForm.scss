@@ -1,0 +1,18 @@
+@import "../mixins";
+@import "../colors";
+
+#modal-with-form {
+	direction: rtl;
+	.message {
+		font-size: 12px;
+		color: red;
+	}
+	
+	.title {
+		@include margin(25px, 25px, 25px, 25px);
+	}
+
+	* {
+		font-family: IRANSans;
+	}
+}

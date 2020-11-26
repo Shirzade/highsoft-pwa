@@ -1,0 +1,19 @@
+@import "../mixins";
+@import "../colors";
+
+#need-shop {
+  @include background-color($color-background-views, 100vh, 100%);
+
+  .flex-container {
+    height: 100vh;
+  }
+
+  img {
+    @include margin(0px, 0px, 0px, 2px)
+  }
+
+  input {
+    @include textAlign(right)
+  }
+
+}

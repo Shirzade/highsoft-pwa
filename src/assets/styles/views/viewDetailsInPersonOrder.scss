@@ -1,0 +1,54 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+#details-in-person-order {
+  background: $color-background-views;
+
+  .title-image {
+    @include margin(10px, 0px, 0px, 0px);
+    justify-content: center;
+  }
+
+  .container-order-lines {
+    background: $color-section-shop-lines;
+    @include padding(10px, 0px, 0px, 10px)
+  }
+
+  .container-image {
+    width: 100%;
+    @include textAlign(center);
+  }
+
+  .section-details-order {
+    @include textAlign(right);
+    @include padding(15px, 15px, 15px, 15px);
+
+    div {
+      float: right;
+      direction: rtl;
+    }
+  }
+
+  .button-show-list-lines {
+    img {
+      float: left;
+      @include margin(8px, 0px, 0px, 0px)
+    }
+
+    div {
+      float: right;
+    }
+  }
+
+  .container-financial {
+    @include textAlign(right);
+    @include margin(15px, 0px, 0px, 15px);
+
+    div {
+      direction: rtl;
+    }
+  }
+
+
+}

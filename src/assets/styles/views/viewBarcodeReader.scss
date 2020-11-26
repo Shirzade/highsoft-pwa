@@ -1,0 +1,18 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+#barcode-reader {
+  background: $color-background-views;
+
+
+  .container-barcode {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+
+    .container-line {
+
+    }
+  }
+}

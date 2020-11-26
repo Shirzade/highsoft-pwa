@@ -1,0 +1,13 @@
+@import "../mixins";
+@import "../colors";
+
+#suggest-product {
+
+  .container-suggest-product {
+    color: $color-primary;
+    font-size: 13px;
+    @include padding(10px, 3px, 3px, 10px);
+    @include textAlign(right)
+  }
+
+}

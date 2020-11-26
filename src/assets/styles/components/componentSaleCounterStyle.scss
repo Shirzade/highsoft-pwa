@@ -1,0 +1,15 @@
+@import "../mixins";
+@import "../colors";
+
+.sale-counter {
+  @include border(1px, solid, $color-login-counter, 5px);
+  @include margin(5px, 0, 0, 8px);
+  height: 40px;
+
+  div {
+    color: white;
+    @include textAlign(center);
+    margin: auto;
+    font-size: 11px;
+  }
+}

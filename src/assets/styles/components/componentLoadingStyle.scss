@@ -1,0 +1,21 @@
+@import "../mixins";
+@import "../colors";
+
+#loading-style {
+
+  @include background-color($color-font-level-00, 127vh, 100%);
+  @include textAlign(center);
+  position: absolute;
+  display: flex;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+
+  .spinner {
+    @include margin(0px,0px,0px,140px)
+  }
+
+  .container-loading {
+    margin: auto;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../mixins";
+@import "../colors";
+
+#item-internet-sale {
+  @include margin(15px, 15px, 15px, 15px);
+  cursor: pointer;
+
+  div {
+    @include textAlign(center);
+    @include font-style($color-font-level-10, 15px, 15px, normal)
+  }
+
+  span {
+    font-size: 12px;
+  }
+}

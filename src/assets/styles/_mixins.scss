@@ -1,0 +1,102 @@
+@import "variables";
+
+@mixin background-image($url,$repeat:repeat,$position:auto auto, $size:auto,$height) {
+  background: {
+    image: url($url);
+    repeat: $repeat;
+    position: $position;
+    size: $size;
+  }
+  height: $height;
+  width: 100%;
+}
+
+@mixin background-color($color,$height,$width) {
+  background: $color;
+  height: $height;
+  width: $width;
+}
+
+@mixin background-color-withOut-width($color,$height) {
+  background: $color;
+  height: $height;
+}
+
+@mixin background-color-withOut-height($color,$width) {
+  background: $color;
+  width: $width;
+}
+
+@mixin font-style($color,$size,$lineHeight,$weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  font-family: IRANSans;
+}
+
+@mixin fontFace($family,$src,$weight: normal,$style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$src}.eot');
+    src: url('#{$src}.eot?#iefix') format('embedded-opentype'),
+    url('#{$src}.woff') format('woff'),
+    url('#{$src}.ttf') format('truetype'),
+    url('#{$src}.svg##{$family}') format('svg');
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@mixin padding($top,$right,$left,$bottom) {
+  padding: {
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+@mixin border($size,$type,$color,$radius) {
+  border-width: $size;
+  border-color: $color;
+  border-style: $type;
+  border-radius: $radius;
+}
+
+@mixin border-radius($topRight,$topLeft,$bottomLeft,$bottomRight) {
+  border-top-right-radius: $topRight;
+  border-top-left-radius: $topLeft;
+  border-bottom-left-radius: $bottomLeft;
+  border-bottom-right-radius: $bottomRight;
+}
+
+@mixin border-type($top,$right,$left,$bottom,$color,$type) {
+  border: {
+    top: $color $type $top;
+    right: $color $type $right;
+    left: $color $type $left;
+    bottom: $color $type $bottom;
+  }
+}
+
+@mixin margin($top,$right,$left,$bottom) {
+  margin: {
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+@mixin directionRTL() {
+  direction: rtl;
+}
+
+@mixin textAlign($ta) {
+  text-align: $ta;
+}
+
+@mixin floatElement($fe) {
+  float: $fe;
+}

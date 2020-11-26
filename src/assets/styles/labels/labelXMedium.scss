@@ -1,0 +1,9 @@
+@import "../mixins";
+@import "../colors";
+
+
+#title-x-medium {
+  @include textAlign(center);
+  @include margin(20px, 0px, 0px, 20px);
+  @include font-style($color-font-level-10, 17px, 30px, normal)
+}

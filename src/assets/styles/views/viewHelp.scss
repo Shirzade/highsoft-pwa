@@ -1,0 +1,10 @@
+@import "../mixins";
+@import "../colors";
+
+#help {
+  background: $color-background-views;
+
+  .start-button {
+    @include margin(0px, 50px, 50px, 5px)
+  }
+}

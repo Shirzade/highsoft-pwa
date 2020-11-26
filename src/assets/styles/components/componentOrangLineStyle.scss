@@ -1,0 +1,7 @@
+@import "../mixins";
+@import "../colors";
+
+#orange-line {
+  @include background-color-withOut-width($color-orange, 2px);
+  @include margin(10px, 0px, 0px, 7px)
+}

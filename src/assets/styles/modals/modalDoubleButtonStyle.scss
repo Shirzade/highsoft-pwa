@@ -1,0 +1,13 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+#modal-double-button {
+  .title-single-button {
+    @include margin(25px, 25px, 25px, 25px)
+  }
+
+  * {
+    font-family: IRANSans;
+  }
+}
